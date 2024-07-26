@@ -1,4 +1,4 @@
 
 def handle(data):
-    data["hello"] = "Hello world!234325345346"
+    data["hello"] = "Py:Hello world"
     return data
