@@ -1,7 +1,7 @@
 <?php
 
 function handle($data) {
-    $data['hello'] = "Hello world";
+    $data['hello'] = "Php:Hello world";
 
     return $data;
 }
