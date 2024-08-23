@@ -6,8 +6,10 @@ COPY src src
 RUN addgroup --gid 501 usercode && \
     adduser --disabled-password \
     --gecos "" \
+    --shell /usr/sbin/nologin \
+    --ingroup usercode \
     --uid 501 \
-    usercode
-USER usercode
+    usercode1
+USER usercode1
 
 ENTRYPOINT ["node", "/app/src/main.js"]
