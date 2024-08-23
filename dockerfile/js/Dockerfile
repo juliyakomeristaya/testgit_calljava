@@ -9,7 +9,7 @@ RUN addgroup --gid 501 usercode && \
     --shell /usr/sbin/nologin \
     --ingroup usercode \
     --uid 501 \
-    usercode1
-USER usercode1
+    test
+USER test
 
 ENTRYPOINT ["node", "/app/src/main.js"]
