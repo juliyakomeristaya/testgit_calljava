@@ -12,4 +12,4 @@ RUN addgroup --gid 501 usercode && \
     usercode
 USER usercode
 
-ENTRYPOINT ["node", "/app/src/main.js"]
+ENTRYPOINT ["node", "/app/main.js"]
