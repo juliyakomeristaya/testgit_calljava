@@ -6,8 +6,6 @@ COPY src src
 RUN addgroup --gid 501 usercode && \
     adduser --disabled-password \
     --gecos "" \
-    --shell /usr/sbin/nologin \
-    --in usercode \
     --uid 501 \
     usercode
 USER usercode
